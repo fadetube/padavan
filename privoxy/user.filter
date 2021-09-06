@@ -76,4 +76,4 @@
 #################################################################################
 CLIENT-HEADER-FILTER: androidfilter Replace all "Android" with "Windows"
 
-s@\b(Android|iP\w+)\b@Windows NT@ig
+s@\b(Android\s\d+|CPU iP\w+\s(OS)\s\w+\s(like Mac OS X)|CPU OS\s\w+\s(like Mac OS X)|Windows NT\s\d+(.)\d|Linux|X11)\b@Macintosh@ig
