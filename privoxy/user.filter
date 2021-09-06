@@ -74,3 +74,6 @@
 #     be save, while '?' will sooner or later cause conflicts with $url.
 # 
 #################################################################################
+CLIENT-HEADER-FILTER: androidfilter Replace all "Android" with "Windows"
+
+s@\b(Android|iP\w+)\b@Windows NT@ig
